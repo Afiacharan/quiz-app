@@ -1,0 +1,83 @@
+/* General styles for buttons */
+.btn {
+    background-color:#6949FD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 8px;
+    width: 70%;
+
+  }
+  
+  .btn i {
+    margin-right: 5px;
+  }
+  /* secondbtn */
+  .btns {
+    background-color:#1F1147 ;
+    color:#6949FD;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    align-items: center;
+    gap: 8px;
+    width: 70%;
+    border: 1px solid #6949FD;
+  }
+  
+ 
+  
+  /* Media Queries for responsive container width */
+  .container {
+    width: 100%; /* Full width for mobile devices */
+    border-radius: 30px;
+  }
+  
+
+  @media (min-width: 992px) {
+    .container {
+      width: 25%; /* 25% width for desktops */
+    }
+  }
+  .container{
+    background-color:#1F1147 ;
+  }
+  h1{
+    color: #49fdd0;
+  }
+  h2{
+    color: white;
+  }
+  h4{
+    color: white;
+  }
+  .custom-checkbox {
+    width: 20px; /* Width of the custom checkbox */
+    height: 20px; /* Height of the custom checkbox */
+    border: 2px solid #3d07ff; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    position: relative; /* For positioning the check mark */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Checked state */
+input[type="radio"]:checked + .custom-checkbox {
+    background-color: #0059ff; /* Background color when checked */
+}
+
+/* Optional: Check mark */
+input[type="radio"]:checked + .custom-checkbox:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid white; /* Color of the check mark */
+    border-width: 0 2px 2px 0; /* Creates a check mark */
+    transform: rotate(45deg); /* Rotate to make it look like a check mark */
+}
